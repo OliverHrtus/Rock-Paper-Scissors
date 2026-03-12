@@ -4,9 +4,9 @@ let playerScore = 0;
 
 const choices = ['rock', 'paper', 'scissors'];
 const choiceImages = {
-    rock: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d4/Stone.png/revision/latest/thumbnail/width/360/height/360?cb=20220112085705',      
-    paper: 'https://static.wikia.nocookie.net/shivaxis-rlcraft/images/b/b2/Paper.png/revision/latest/thumbnail/width/360/height/450?cb=20220825234555',   
-    scissors: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5a/Shears_JE2_BE2.png/revision/latest/thumbnail/width/360/height/360?cb=20191012183756'
+    rock: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d4/Stone.png/revision/latest/thumbnail/width/360/height/360?cb=20220112085705.png',      
+    paper: 'https://static.wikia.nocookie.net/shivaxis-rlcraft/images/b/b2/Paper.png/revision/latest/thumbnail/width/360/height/450?cb=20220825234555.png',   
+    scissors: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5a/Shears_JE2_BE2.png/revision/latest/thumbnail/width/360/height/360?cb=20191012183756.png'
 };
 
 function playGame(playerChoice) {

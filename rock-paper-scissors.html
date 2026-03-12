@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+    <title>Document</title>
     <script src="script.js"></script>
 </head>
 <style>
@@ -15,13 +15,12 @@
         border-radius: 5px;
         cursor: pointer;
     }
-
     .vrchne:hover {
-        transform: scale(0.98);
-        cursor: pointer;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
-        transition: 0.3s ease;
-    }
+transform: scale(0.98);
+cursor: pointer;
+box-shadow: 0 10px 20px rgba(0,0,0,0.45);
+transition: 0.3s ease;
+}
 
     .obraztek {
         height: 250px;
@@ -31,7 +30,6 @@
         display: flex;
         flex-direction: column;
     }
-
     .obraztekrock {
         height: 250px;
         width: 450px;
@@ -44,60 +42,68 @@
     .spodne {
         margin: auto;
         height: 100px;
-        width: 500px;
+        width: 400px;
+        background-color: rgb(219, 219, 219);
+        margin-top: 20px;
+        border-radius: 20px;
+        border: 5px gray solid;
+    }
+    .spodne_reset {
+        margin: auto;
+        height: 100px;
+        width: 200px;
         background-color: rgb(219, 219, 219);
         margin-top: 20px;
         border-radius: 20px;
         border: 5px gray solid;
     }
 
-    h1 {
+
+    .spodne_reset:hover {
+        transform: scale(0.98);
+        cursor: pointer;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.45);
+        transition: 0.3s ease;
+        }
+
+    h1{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 60px;
+        font-size: 55px;
         margin: 0;
         text-align: center;
     }
-
-    p {
+    p{
         font-family: 'Courier New', Courier, monospace;
         margin-top: 5px;
         font-size: 30px;
-        margin: 0;
-        text-align: center;
+        margin: 0;text-align: center;
     }
-
-    .result-text {
+    .result-text{
         font-family: 'Courier New', Courier, monospace;
         margin-top: 25px;
-        font-size: 65px;
-        margin-top: 13px;
-        text-align: center;
+        font-size: 58px;
+        margin-top: 17px;text-align: center;
     }
-
-    .choice {
+    .choice{
         margin-left: 25.4%;
         font-size: 50px;
     }
+
 </style>
 
 <body>
     <div style="width: auto;display: flex;">
         <button class="vrchne" onclick="playGame('rock')">
             <img class="obraztekrock"
-                src="https://clipart-library.com/new_gallery/42-420480_dwayne-the-rock-the-rock-dwayne-johnson-rock.png"
-                alt="">
+                src="https://clipart-library.com/new_gallery/42-420480_dwayne-the-rock-the-rock-dwayne-johnson-rock.png"alt="">
 
         </button>
         <button class="vrchne " onclick="playGame('paper')">
-            <img class="obraztek"
-                src="https://static.wikia.nocookie.net/shivaxis-rlcraft/images/b/b2/Paper.png/revision/latest/thumbnail/width/360/height/450?cb=20220825234555"
-                alt="">
+            <img class="obraztek" src="https://static.wikia.nocookie.net/shivaxis-rlcraft/images/b/b2/Paper.png/revision/latest/thumbnail/width/360/height/450?cb=20220825234555" alt="">
 
         </button>
         <button class="vrchne" onclick="playGame('scissors')">
-            <img class="obraztek"
-                src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5a/Shears_JE2_BE2.png/revision/latest/thumbnail/width/360/height/360?cb=20191012183756"
-                alt="">
+            <img class="obraztek" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5a/Shears_JE2_BE2.png/revision/latest/thumbnail/width/360/height/360?cb=20191012183756" alt="">
         </button>
     </div>
 
@@ -107,9 +113,8 @@
 
 
 
-    <div
-        style="margin: auto;padding-top: 45px;height: 430px;width: auto;background-color: rgb(229, 229, 229);margin-top: 20px;">
-        <div class="choice" id="choices"></div>
+    <div style="margin: auto;padding-top: 45px;height: 430px;width: auto;background-color: rgb(229, 229, 229);margin-top: 20px;">
+            <div class="choice" id="choices"></div>
     </div>
 
 
@@ -121,30 +126,25 @@
 
     <div style="width: auto;display: flex;">
         <div class="spodne">
-            <b>
-                <p>Moje skóre</p>
-            </b>
-            <h1>
-                <div class="score-value" id="playerScore">0</div>
-            </h1>
+            <b><p>Moje skóre</p></b>
+            <h1><div class="score-value" id="playerScore">0</div></h1>
         </div>
 
 
         <div class="spodne">
 
-            <b>
-                <div class="result-text" id="result"></div>
-            </b>
+            <b><div class="result-text" id="result"></div></b>
         </div>
 
 
         <div class="spodne">
-            <b>
-                <p>Protihráčove skóre</p>
-            </b>
-            <h1>
-                <div class="score-value" id="computerScore">0</div>
-            </h1>
+            <b><p>Protihráčove skóre</p></b>
+            <h1><div class="score-value" id="computerScore">0</div></h1>
+        </div>
+
+        <button class="spodne_reset" onclick="resetGame()">
+            <b><p>RESET</p></b>
+
         </div>
 
     </div>

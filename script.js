@@ -69,7 +69,7 @@ function resetGame() {
     playerScore = 0;
     computerScore = 0;
     updateScoreboard();
-    document.getElementById('choices').innerHTML = 'Make your choice!';
+    document.getElementById('choices').innerHTML = '';
     document.getElementById('result').innerHTML = '';
     document.getElementById('result').className = 'result-text';
 }
